@@ -1,56 +1,134 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    background: #F3F1FF;
 }
-.container{
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-ul ,li, a{
+ul,
+li,
+a {
     list-style-type: none;
     text-decoration: none;
-    color: #fff;
 }
 
-header{
+header {
     background: #562EFF;
     height: 94px;
 }
-.nav-bar{
+
+.nav-bar {
     display: flex;
     align-items: center;
     padding: 2%;
 }
-.left-nav{
-    width:45%;
+
+.left-nav {
+    width: 45%;
     position: relative;
 }
 
-.logo{
+.logo {
     color: white;
 }
-.left-nav span{
+
+.left-nav span {
     margin-left: 20px;
 }
-.right-nav{
+
+.right-nav {
     width: 49%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
+
 .right-nav ul li {
+    color: #fff;
     align-items: center;
     display: inline;
     margin: 0 30px;
 }
-img.profile{
+
+.nav-bar ul li a,
+.nav-bar a {
+    color: #fff;
+
+}
+
+img.profile {
     align-items: center;
     width: 51px;
     height: 51px;
+}
+
+.top-player img {
+    margin: 0 20px;
+    width: 54px;
+    height: 54px;
+}
+.top-player-blog-section{
+    height: 900px;
+    margin-top: 20px ;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.top-player{
+    padding: 34px;
+
+}
+
+.players {
+    height: 30%;
+    padding: 28px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid rgb(41, 40, 40);
+
+}
+
+.player {
+    margin: 5px ;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 1px 12px   #20202013;
+    border-radius: 5px;
+    transition: .3s ease-in;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+}
+.player:hover{
+    box-shadow: 2px 1px 12px   #0c8dd8;
+
+}
+
+.player a{
+    margin-left: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.top-player h2{
+    color: #562EFF;
 }
